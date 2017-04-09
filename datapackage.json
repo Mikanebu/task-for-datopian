@@ -1,0 +1,28 @@
+{
+  "name": "natural-gas-price",
+  "resources": [
+    {
+      "name": "data",
+      "schema": {
+        "fields": [
+          {
+            "type": "date",
+            "name": "Date",
+            "format": "default",
+            "description": "",
+            "title": ""
+          },
+          {
+            "type": "number",
+            "name": "Price",
+            "format": "default",
+            "description": "",
+            "title": ""
+          }
+        ]
+      },
+      "path": "./daily.csv"
+    }
+  ],
+  "title": "Natural Gas Price"
+}
