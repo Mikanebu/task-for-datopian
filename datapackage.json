@@ -21,7 +21,7 @@
           }
         ]
       },
-      "path": "./daily.csv"
+      "path": "daily.csv"
     }
   ],
   "title": "Natural Gas Price"
