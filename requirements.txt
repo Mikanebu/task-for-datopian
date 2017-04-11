@@ -1,0 +1,4 @@
+BeautifulSoup
+pandas
+plotly.plotly
+plotly.graph_objs
