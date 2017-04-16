@@ -5,7 +5,7 @@ import csv
 date = []
 price = []
 counter = 0
-csv_reader = csv.reader(open('daily.csv'))
+csv_reader = csv.reader(open('../data/daily.csv'))
 for row in csv_reader:
     if counter == 0:
         counter += 1
@@ -15,6 +15,6 @@ for row in csv_reader:
 trace = dict(x = date, y = price)
 data = [trace]
 # save as daily.png
-py.image.save_as(data, filename='daily.png')
+py.image.save_as(data, filename='../data/daily.png')
 # opens in Embed URL
 py.plot(data, filename='natural-gas-prices-daily')

@@ -1,5 +1,5 @@
 
-Plotly.d3.csv('monthly.csv', function(rows){
+Plotly.d3.csv('../data/daily.csv', function(rows){
   var trace = {
     type: 'scatter',                    // set the chart type
     mode: 'lines',                      // connect points with lines
@@ -15,7 +15,7 @@ Plotly.d3.csv('monthly.csv', function(rows){
   };
 
   var layout = {
-    title: 'Henry Hub Natural Gas Spot Price Monthly',
+    title: 'Henry Hub Natural Gas Spot Price Daily',
     yaxis: {title: "Dollars per Million Btu"},       // set the y axis title
     xaxis: {
       showgrid: false,                  // remove the x-axis grid lines
@@ -26,5 +26,6 @@ Plotly.d3.csv('monthly.csv', function(rows){
     }
   };
 
-  Plotly.plot(document.getElementById('monthly-graph'), [trace], layout, {showLink: false});
+  Plotly.plot(document.getElementById('daily-graph'), [trace], layout, {showLink: false});
+
 });

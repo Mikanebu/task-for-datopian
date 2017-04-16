@@ -5,7 +5,7 @@ import csv
 price = []
 date = []
 counter = 0
-csv_reader = csv.reader(open('monthly.csv') )
+csv_reader = csv.reader(open('../data/monthly.csv') )
 for row in csv_reader:
     if counter == 0:
         counter += 1
@@ -15,6 +15,6 @@ for row in csv_reader:
 trace = dict(x=date, y=price)
 data = [trace]
 # save as monthly.png
-py.image.save_as(data, filename='monthly.png')
+py.image.save_as(data, filename='../data/monthly.png')
 #opens in Embed URL
 py.plot(data, filename='natural-gas-prices-monthly')
