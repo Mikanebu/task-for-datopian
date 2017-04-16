@@ -13,3 +13,9 @@ In order to run this script:
 ```
 $ python main.py
 ```
+
+To see charts start localhost: 
+```
+$ python -m http.server
+```
+Open this following address in browser: http://localhost:8000/
