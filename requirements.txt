@@ -1,4 +1,2 @@
-BeautifulSoup
-pandas
-plotly.plotly
-plotly.graph_objs
+beautifulsoup4==4.5.1
+plotly==2.0.7
